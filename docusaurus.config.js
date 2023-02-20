@@ -116,7 +116,7 @@ const config = {
               },
               {
                 label: 'Cloud Functions',
-                to: '/cloud-functions',
+                to: '/category/cloud-functions',
               },
               {
                 label: 'Extensões',
