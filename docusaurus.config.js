@@ -9,7 +9,7 @@ const projectName = 'firebase4noobs';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'firebase4noobs',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -33,8 +33,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'pt-BR',
+    locales: ['pt-BR'],
   },
 
   presets: [
@@ -48,7 +48,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/hvini/firebase4noobs/tree/main/',
         },
         blog: false,
         theme: {
@@ -64,17 +64,20 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'firebase4noobs',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/hvini',
             label: 'GitHub',
             position: 'right',
           },
+          {
+            type: 'localeDropdown',
+          }
         ],
       },
       footer: {
@@ -84,39 +87,49 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Introdução',
                 to: '/',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Utilização e faturamento',
+                to: '/billing',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Firebase CLI',
+                to: '/category/firebase-cli',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Autenticação',
+                to: '/category/auth',
               },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Firestore',
+                to: '/category/firestore',
+              },
+              {
+                label: 'Cloud Storage',
+                to: '/category/cloud-storage',
+              },
+              {
+                label: 'Hosting',
+                to: '/hosting',
+              },
+              {
+                label: 'Cloud Functions',
+                to: '/cloud-functions',
+              },
+              {
+                label: 'Extensões',
+                to: '/extensions',
+              },
+              {
+                label: 'App Distribution',
+                to: '/app-distribution',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Vinícius Henrique. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

@@ -1,0 +1,8 @@
+{
+    "label": "Firebase CLI",
+    "position": 3,
+    "link": {
+      "type": "generated-index",
+      "description": "Interface de linha de comando do firebase."
+    }
+  }

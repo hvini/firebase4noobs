@@ -1,0 +1,8 @@
+{
+    "label": "Cloud Functions",
+    "position": 8,
+    "link": {
+      "type": "generated-index",
+      "description": "Backend sem servidor"
+    }
+  }
