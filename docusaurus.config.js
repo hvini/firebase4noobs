@@ -1,8 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-require('dotenv').config();
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -66,11 +64,11 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       algolia: {
-        apiKey: process.env.API_KEY,
-        indexName: process.env.INDEX_NAME,
+        apiKey: 'a7eaaf91ebf0ef8cd31759109132f99c',
+        indexName: 'firebase4noobs',
         contextualSearch: true,
         placeholder: 'Pesquisar',
-        appId: process.env.APPLICATION_ID
+        appId: 'GOF23NU8S9'
       },
       navbar: {
         title: 'firebase4noobs',
