@@ -1,6 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+require('dotenv').config();
+
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -63,6 +65,13 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      algolia: {
+        apiKey: process.env.API_KEY,
+        indexName: process.env.INDEX_NAME,
+        contextualSearch: true,
+        placeholder: 'Pesquisar',
+        appId: process.env.APPLICATION_ID
+      },
       navbar: {
         title: 'firebase4noobs',
         logo: {
@@ -71,12 +80,13 @@ const config = {
         },
         items: [
           {
-            href: 'https://github.com/hvini',
-            label: 'GitHub',
             position: 'right',
+            type: 'localeDropdown',
           },
           {
-            type: 'localeDropdown',
+            href: 'https://github.com/hvini',
+            position: 'right',
+            className: 'header-github-link',
           }
         ],
       },
@@ -106,6 +116,10 @@ const config = {
                 label: 'Firestore',
                 to: '/category/firestore',
               },
+            ],
+          },
+          {
+            items: [
               {
                 label: 'Cloud Storage',
                 to: '/category/cloud-storage',
@@ -126,8 +140,8 @@ const config = {
                 label: 'App Distribution',
                 to: '/app-distribution',
               },
-            ],
-          },
+            ]
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Vinícius Henrique. Built with Docusaurus.`,
       },
