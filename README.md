@@ -17,7 +17,7 @@
     <a href="https://hvini.github.io/firebase4noobs/"><strong>Explore a documentação »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/hvini/firebase4noobs/blob/develop/code_of_conduct.md">Código de Conduta</a>
+    <a href="https://github.com/hvini/firebase4noobs/blob/main/code_of_conduct.md">Código de Conduta</a>
     ·
     <a href="https://github.com/hvini/firebase4noobs/issues">Bug Report</a>
     ·
